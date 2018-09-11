@@ -1,3 +1,6 @@
+extern crate rayon;
+use primes::rayon::iter::IntoParallelIterator;
+use primes::rayon::iter::ParallelIterator;
 
 pub fn test (max: u64) {
   let mut count = 0;
@@ -21,6 +24,12 @@ pub fn test_functional (max: u64) {
   }
   // println!("{:?}", vec);
   // println!("Max primes: {}", max);
+}
+
+pub fn test_functional_paralell (max: u64) {
+  let vec: Vec<_> = (1..max + 1).into_par_iter().filter(|x| is_prime_functional(*x)).collect();
+  // println!("{:?}", vec);
+  //  println!("Max primes: {}", vec.len());
 }
 
 fn isPrime(n: u64) -> bool {

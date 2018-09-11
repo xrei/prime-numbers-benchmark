@@ -4,6 +4,7 @@ version = "0.1.0"
 authors = ["xrei <romanrei.dev@gmail.com>"]
 
 [dependencies]
+rayon = "1.0"
 
 [[bin]]
 name = "primesrust"
