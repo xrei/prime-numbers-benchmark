@@ -6,7 +6,7 @@
 ```
 test_functional_paralell: 29.921 ms
 test_functional: 4.368 s
-test: more than 40 sec
+test: 23.827 s
 ```
 
 ## Golang
