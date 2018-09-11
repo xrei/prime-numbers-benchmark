@@ -10,8 +10,8 @@ pub fn test (max: u64) {
     }
     i+=1;
   }
-  println!("{:?}", vec)
-  println!("Max primes: {}", max);
+  // println!("{:?}", vec)
+  // println!("Max primes: {}", max);
 }
 
 pub fn test_functional (max: u64) {
@@ -19,8 +19,8 @@ pub fn test_functional (max: u64) {
   for x in (1..max + 1).filter(|x| is_prime_functional(*x)) { 
     vec.push(x)
   }
-  println!("{:?}", vec);
-  println!("Max primes: {}", max);
+  // println!("{:?}", vec);
+  // println!("Max primes: {}", max);
 }
 
 fn isPrime(n: u64) -> bool {
