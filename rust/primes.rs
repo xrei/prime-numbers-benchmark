@@ -1,6 +1,5 @@
 
 pub fn test (max: u64) {
-  println!("Max primes: {}", max);
   let mut count = 0;
   let mut i = 2;
   let mut vec = Vec::new();
@@ -11,15 +10,17 @@ pub fn test (max: u64) {
     }
     i+=1;
   }
-  // println!("{:?}", vec)
+  println!("{:?}", vec)
+  println!("Max primes: {}", max);
 }
 
 pub fn test_functional (max: u64) {
-  println!("Max primes: {}", max);
   let mut vec = Vec::new();
   for x in (1..max + 1).filter(|x| is_prime_functional(*x)) { 
     vec.push(x)
   }
+  println!("{:?}", vec);
+  println!("Max primes: {}", max);
 }
 
 fn isPrime(n: u64) -> bool {
