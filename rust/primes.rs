@@ -26,6 +26,7 @@ pub fn test_functional (max: u64) {
   // println!("Max primes: {}", max);
 }
 
+// Credits to: https://github.com/polachok
 pub fn test_functional_paralell (max: u64) {
   let vec: Vec<_> = (1..max + 1).into_par_iter().filter(|x| is_prime_functional(*x)).collect();
   // println!("{:?}", vec);
