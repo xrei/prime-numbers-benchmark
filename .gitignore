@@ -1,4 +1,4 @@
-rust-primes/build
-rust-primes/target
-rust-primes/Cargo.lock
+rust/build
+rust/target
+rust/Cargo.lock
 haskell/build
