@@ -1,0 +1,10 @@
+[package]
+name = "rust-primes"
+version = "0.1.0"
+authors = ["xrei <romanrei.dev@gmail.com>"]
+
+[dependencies]
+
+[[bin]]
+name = "primesrust"
+path = "main.rs"

@@ -1,4 +1,4 @@
-const maxPrimes = 100000
+const maxPrimes = 10000
 let primes = []
 
 let calc = () => {
@@ -8,7 +8,6 @@ let calc = () => {
 
   function isPrime(n) {
     if (n % 1 || n < 2) return false
-  
     let q = Math.sqrt(n)
   
     for (let i = 2; i <= q; i++) {
